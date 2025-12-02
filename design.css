@@ -1,0 +1,109 @@
+/* styles moved from index.html */
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background: #f6f7fb;
+    font-family: Arial, sans-serif;
+    padding: 24px;
+}
+
+/* logo / brand above the card */
+.logo-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px; /* space between logo and card */
+}
+.logo-wrapper .logo {
+    width: 64px;
+    height: 64px;
+}
+.brand-title {
+    font-weight: 700;
+    color: #223;
+    font-size: 16px;
+}
+
+/* login card */
+.login-card {
+    background: #fff;
+    width: 320px;
+    padding: 24px;
+    border-radius: 10px;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.08);
+    text-align: left;
+}
+
+.login-card h2 {
+    margin: 0 0 14px 0;
+    font-size: 20px;
+    color: #222;
+}
+
+.form-group {
+    margin-bottom: 12px;
+}
+
+label {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 6px;
+    color: #444;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d6d9e6;
+    border-radius: 6px;
+    font-size: 14px;
+    box-sizing: border-box;
+    background: #fbfbfe;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 14px;
+}
+
+.actions .remember {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: #555;
+}
+
+button[type="submit"] {
+    background: #2b6cb0;
+    color: #fff;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.links {
+    margin-top: 12px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.links a {
+    color: #2b6cb0;
+    text-decoration: none;
+}
+
+@media (max-width: 360px) {
+    .login-card { width: 92%; padding: 16px; }
+    .logo-wrapper { margin-bottom: 8px; }
+}
